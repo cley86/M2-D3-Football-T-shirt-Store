@@ -24,23 +24,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #003366;
+  background-color: #002ba1;
   color: white;
   padding: 1em;
   height: 60px;
-}
-
-.logo {
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.logo img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) invert(1);
 }
 
 .menu-toggle {
@@ -69,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  background-color: #003366;
+  background-color: #002ba1;
   padding: 1em;
   position: absolute;
   top: 60px;
@@ -178,7 +165,7 @@ body {
       "menu products"
       "menu products"
       "menu pagination"
-      "footer footer";
+      "menu footer";
     grid-template-columns: 220px 1fr;
   }
 
@@ -232,10 +219,14 @@ body {
   }
 
   .footer {
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 220px;
+    left: 0;
+    padding: 1em;
+    background-color: #003366;
+    color: white;
+    text-align: center;
   }
 
   .social-media {
