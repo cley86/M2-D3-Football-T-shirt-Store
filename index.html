@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Football T-shirt</title>
+  </head>
+  <body>
+    <header class="menu">
+      <div class="logo">Football T-shirt</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="filters">
+      <label for="filter">Ordenar Por:</label>
+      <select id="filter">
+        <option value="precio">Precio</option>
+      </select>
+    </aside>
+    <main class="products">
+        <div class="product">
+          <img src="./assets/img/RM01.png" alt="Real Madrid Icon Jersey" />
+          <p>Real Madrid Icon Jersey 2023/24</p>
+          <button>Ver más</button>
+        </div>
+        <div class="product">
+          <img src="./assets/img/RM02.jpg" alt="Real Madrid 2023/24 Third" />
+          <p>Real Madrid 2023/24 Third</p>
+          <button>Ver más</button>
+        </div>
+        <div class="product">
+          <img src="./assets/img/RM03.jpg" alt="Real Madrid 2023/24 Away" />
+          <p>Real Madrid 2023/24 Away</p>
+          <button>Ver más</button>
+        </div>
+        <div class="product">
+          <img src="./assets/img/B04.png" alt="Barcelona 22/23 HOME" />
+          <p>Barcelona 22/23 HOME</p>
+          <button>Ver más</button>
+        </div>
+        <div class="product">
+          <img src="./assets/img/A05.png" alt="Arsenal 2023/24 HOME" />
+          <p>Arsenal 2023/24 HOME</p>
+          <button>Ver más</button>
+        </div>
+        <div class="product">
+          <img src="./assets/img/MC06.webp" alt="Manchester City 22/23 HOME" />
+          <p>Manchester City 22/23 HOME</p>
+          <button>Ver más</button>
+        </div>
+      </main>
+    <div class="pagination">
+      <button class="page-btn">&laquo;</button>
+      <button class="page-btn">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">&raquo;</button>
+    </div>
+    <footer class="footer">
+      <div class="social-media">
+        <a href="#">
+          <img src="./assets/img/facebook.svg" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="./assets/img/instagram.svg" alt="instagram" />
+        </a>
+      </div>
+      <p>Todos los derechos reservados</p>
+    </footer>
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('nav').classList.toggle('nav-active');
+      });
+    </script>
+  </body>
+</html>
